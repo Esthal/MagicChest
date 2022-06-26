@@ -1,0 +1,21 @@
+.navBar{
+    display: flex;
+    justify-content: center;
+}
+.navBar__links{
+    margin: 10px 0;
+}
+.navBar__links .link{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Balsamiq Sans', serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px 8px 0 8px;
+    margin: 0 5px;
+    border: 2px solid transparent;
+}
+.navBar__links .link.active{
+    border: 2px dashed #C6CD78;
+    border-radius: 20px;
+}

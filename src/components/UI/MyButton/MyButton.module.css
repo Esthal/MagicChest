@@ -1,0 +1,14 @@
+.myBtn{
+    background: #EC9454;
+    border-radius: 10px;
+    border: none;
+
+    color: white;
+    font-family: 'Balsamiq Sans', serif;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    padding: 8px;
+    width: 100%;
+}

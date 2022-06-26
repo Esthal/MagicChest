@@ -1,0 +1,59 @@
+.checkBoxBody{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.customCheckbox, .checkBoxBody label{
+    cursor: pointer;
+}
+.customCheckbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.customCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.customCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+.customCheckbox:checked+label::before {
+    border-color: #EC9454;
+    background-color: #EC9454;
+    background-image: url('../../../../public/assets/img/icon/done_white.png');
+}
+.customCheckbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #ecb28a;
+}
+.customCheckbox:not(:disabled):active+label::before {
+    background-color: #ecb28a;
+    border-color: #ecb28a;
+}
+.customCheckbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(238, 163, 39, 0.25);
+}
+.customCheckbox:focus:not(:checked)+label::before {
+    border-color: #ecb28a;
+}
+.customCheckbox:disabled+label::before {
+    background-color: #e9ecef;
+}
+
+.checkBoxBody label{
+    font-family: "Neucha", serif;
+    font-size: 18px;
+}

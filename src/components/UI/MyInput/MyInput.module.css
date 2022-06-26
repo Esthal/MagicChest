@@ -1,0 +1,18 @@
+.myInput{
+    background: #FFFFFF;
+    width: 100%;
+    border: 1px solid #8E334C;
+    padding: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    font-family: "Neucha", serif;
+    font-size: 18px;
+    outline: none;
+
+}
+.myInput:focus{
+    outline: 2px solid #8E334C;
+}
+.myInput::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
